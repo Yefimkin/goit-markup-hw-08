@@ -1,0 +1,47 @@
+.section-three {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-three-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-bottom: 50px;
+}
+
+.section-three-list {
+  display: flex;
+}
+.section-three-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.works-title-section {
+  background-color: rgba(47, 48, 58, 0.8);
+  position: relative;
+}
+
+.works-title-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+  bottom: 0;
+  left: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
