@@ -122,6 +122,10 @@
 .social-mobile {
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 479px) {
+    font-size: 8vw;
+  }
 }
 
 .social-mobile:not(:last-child) {
