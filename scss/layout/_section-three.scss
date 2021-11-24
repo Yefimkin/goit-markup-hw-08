@@ -1,6 +1,11 @@
 .section-three {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+    padding-top: 0;
+  }
 }
 
 .section-three-title {
@@ -12,18 +17,30 @@
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 50px;
+  @media screen and (max-wight: 1999px) {
+    display: none;
+  }
 }
 
 .section-three-list {
   display: flex;
+  @media screen and (min-wight: 1200px) {
+    display: none;
+  }
 }
 .section-three-item:not(:last-child) {
   margin-right: 30px;
+  @media screen and (min-wight: 1200px) {
+    display: none;
+  }
 }
 
 .works-title-section {
   background-color: rgba(47, 48, 58, 0.8);
   position: relative;
+  @media screen and (min-wight: 1200px) {
+    display: none;
+  }
 }
 
 .works-title-text {
@@ -44,4 +61,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (min-wight: 1200px) {
+    display: none;
+  }
 }
