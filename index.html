@@ -23,10 +23,10 @@
   <body>
     <!-- header -->
     <header class="header">
-      <div class="header-container container">
-        <a href="index.html" class="logo link"
-          ><span class="web">Web</span><span class="second-web">Studio</span></a>
+      <div class="container header-container">
         <nav class="header-nav" aria-label="Header">
+          <a href="./index.html" class="header-nav__logo">Web<span
+              class="header-nav__logo header-nav__logo_black header-nav__logo_position">Studio</span></a>
           <ul class="header-nav__list list">
             <li class="header-nav__item">
               <a class="header-nav__link link current" href="index.html">Студия</a>
@@ -35,10 +35,66 @@
               <a class="header-nav__link link" href="portfolio.html">Портфолио</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link link" href="/contact">Контакты</a>
+              <a class="header-nav__link link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
+        <!-- mobile button -->
+        <button class="mobile__button" data-menu-open>
+          <svg class="mobile__icon">
+            <use href="./images/sprites.svg#menu-burger"></use>
+          </svg>
+        </button>
+        <!-- end of mobile button -->
+        <!-- mobile menu -->
+        <div class="mobile__menu" data-menu>
+          <button class="mobile__close-btn" data-menu-close>
+            <svg class="mobile__close-btn-icon">
+              <use href="./images/sprites.svg#menu-close"></use>
+            </svg>
+          </button>
+          <div class="mobile-container">
+            <div class="mobile">
+              <ul class="mobile-menu__nav list">
+                <li class="mobile-menu__nav-item">
+                  <a class="mobile-menu__nav-link mobile-menu__nav-link--current" href="./index.html">Студия</a>
+                </li>
+                <li class="mobile-menu__nav-item">
+                  <a class="mobile-menu__nav-link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-menu__nav-item">
+                  <a class="mobile-menu__nav-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile">
+              <ul class="mobile-menu__contacts list">
+                <li class="mobile-menu__contacts-item">
+                  <a class="mobile-menu__contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu__contacts-item">
+                  <a class="mobile-menu__contacts-link mobile-menu__contacts-link--mail"
+                    href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+              </ul>
+              <ul class="social-mobile list">
+                <li class="social-mobile__item">
+                  <a class="social-mobile__link" href="#">Instagram</a>
+                </li>
+                <li class="social-mobile__item">
+                  <a class="social-mobile__link" href="#">Twitter</a>
+                </li>
+                <li class="social-mobile__item">
+                  <a class="social-mobile__link" href="#">Facebook</a>
+                </li>
+                <li class="social-mobile__item">
+                  <a class="social-mobile__link" href="#">Linkedin</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end of mobile menu -->
         <div class="header-connect">
           <ul class="header-connect__list list">
             <li class="header-connect__item">
@@ -60,65 +116,6 @@
             </li>
           </ul>
         </div>
-
-
-        <!-- START Mobile Menu -->
-        <button class="header-mobile__button" data-menu-open>
-          <svg class="header-mobile__icon">
-            <use href="./images/sprites.svg#menu-burger"></use>
-          </svg>
-        </button>
-
-        <div class="header-mobile__menu" data-menu>
-          <button class="header-mobile__close-btn" data-menu-close>
-            <svg class="header-mobile__close-btn-icon">
-              <use href="./images/sprites.svg#menu-close"></use>
-            </svg>
-          </button>
-          <!-- inpute in mobile menu from burger button -->
-            <div class="mobile-container">
-              <div class="mobile">
-                <ul class="mobile-menu__nav list">
-                  <li class="mobile-menu__nav-item">
-                    <a class="mobile-menu__nav-link mobile-menu__nav-link--current" href="./index.html">Студия</a>
-                  </li>
-                  <li class="mobile-menu__nav-item">
-                    <a class="mobile-menu__nav-link" href="./portfolio.html">Портфолио</a>
-                  </li>
-                  <li class="mobile-menu__nav-item">
-                    <a class="mobile-menu__nav-link" href="#">Контакты</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="mobile">
-                <ul class="mobile-menu__contacts list">
-                  <li class="mobile-menu__contacts-item">
-                    <a class="mobile-menu__contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
-                  </li>
-                  <li class="mobile-menu__contacts-item">
-                    <a class="mobile-menu__contacts-link mobile-menu__contacts-link--mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                  </li>
-                </ul>
-                <ul class="social-mobile list">
-                  <li class="social-mobile__item">
-                    <a class="social-mobile__link" href="#">Instagram</a>
-                  </li>
-                  <li class="social-mobile__item">
-                    <a class="social-mobile__link" href="#">Twitter</a>
-                  </li>
-                  <li class="social-mobile__item">
-                    <a class="social-mobile__link" href="#">Facebook</a>
-                  </li>
-                  <li class="social-mobile__item">
-                    <a class="social-mobile__link" href="#">Linkedin</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- End input from mobile menu-->
-        </div>
-        
-        <!-- END Mobile Menu -->
       </div>
     </header>
     <!-- end of header -->
@@ -228,7 +225,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
       <!-- section 4 -->
       <section class="team">
         <div class="container">
@@ -458,7 +455,7 @@
         </div>
       </section>
       <!-- section 5 -->
-      <!-- <section class="clients">
+      <section class="clients">
         <div class="container clients-container">
           <h2 class="team-title">Постоянные клиенты</h2>
           <ul class="clients-list list clients-after-list">
@@ -506,7 +503,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- footer -->
     <!-- <footer class="footer">

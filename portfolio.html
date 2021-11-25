@@ -23,9 +23,10 @@
   <body>
     <!-- header -->
     <header class="header">
-      <div class="header-container container">
-        <a href="index.html" class="logo link"><span class="web">Web</span><span class="second-web">Studio</span></a>
+      <div class="container header-container">
         <nav class="header-nav" aria-label="Header">
+          <a href="./index.html" class="header-nav__logo">Web<span
+              class="header-nav__logo header-nav__logo_black header-nav__logo_position">Studio</span></a>
           <ul class="header-nav__list list">
             <li class="header-nav__item">
               <a class="header-nav__link link" href="index.html">Студия</a>
@@ -34,47 +35,24 @@
               <a class="header-nav__link link current" href="portfolio.html">Портфолио</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link link" href="/contact">Контакты</a>
+              <a class="header-nav__link link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
-        <div class="header-connect">
-          <ul class="header-connect__list list">
-            <li class="header-connect__item">
-              <a class="header-connect__link header-connect__link-color header-connect__mail link"
-                href="mailto:info@devstudio.com">
-                <svg class="address-icon header-connect__mail" width="16px" height="12px">
-                  <use href="./images/sprites.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="header-connect__item">
-              <a class="header-connect__link header-connect__link-color header-connect__tel link" href="tel:+380961111111">
-                <svg class="address-icon header-connect__tel" width="10px" height="16px">
-                  <use href="./images/sprites.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-        </div>
-    
-    
-        <!-- START Mobile Menu -->
-        <button class="header-mobile__button" data-menu-open>
-          <svg class="header-mobile__icon">
-            <use href="./img/sprites.svg#menu-burger"></use>
+        <!-- mobile button -->
+        <button class="mobile__button" data-menu-open>
+          <svg class="mobile__icon">
+            <use href="./images/sprites.svg#menu-burger"></use>
           </svg>
         </button>
-    
-        <div class="header-mobile__menu" data-menu>
-          <button class="header-mobile__close-btn" data-menu-close>
-            <svg class="header-mobile__close-btn-icon">
-              <use href="./img/sprites.svg#menu-close"></use>
+        <!-- end of mobile button -->
+        <!-- mobile menu -->
+        <div class="mobile__menu" data-menu>
+          <button class="mobile__close-btn" data-menu-close>
+            <svg class="mobile__close-btn-icon">
+              <use href="./images/sprites.svg#menu-close"></use>
             </svg>
           </button>
-          <!-- inpute in mobile menu from burger button -->
           <div class="mobile-container">
             <div class="mobile">
               <ul class="mobile-menu__nav list">
@@ -116,8 +94,28 @@
             </div>
           </div>
         </div>
-    
-        <!-- END Mobile Menu -->
+        <!-- end of mobile menu -->
+        <div class="header-connect">
+          <ul class="header-connect__list list">
+            <li class="header-connect__item">
+              <a class="header-connect__link header-connect__link-color header-connect__mail link"
+                href="mailto:info@devstudio.com">
+                <svg class="address-icon header-connect__mail" width="16px" height="12px">
+                  <use href="./images/sprites.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="header-connect__item">
+              <a class="header-connect__link header-connect__link-color header-connect__tel link" href="tel:+380961111111">
+                <svg class="address-icon header-connect__tel" width="10px" height="16px">
+                  <use href="./images/sprites.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- end of header -->
