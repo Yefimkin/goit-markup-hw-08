@@ -106,7 +106,19 @@
     }
   }
 }
+.header-connect--envelope {
+  @media screen and(max-width:767px) {
+    width: 14px;
+    height: 10px;
+  }
+}
 
+.header-connect--telephone {
+  @media screen and(max-width:767px) {
+    width: 10px;
+    height: 14px;
+  }
+}
 .address-icon {
   @media screen and (min-width: 768px) {
     margin-right: 10px;
@@ -174,20 +186,23 @@
 }
 
 .header-connect__link {
-  @media screen and (min-width: 768px) {
-    font-style: normal;
-    font-weight: 500;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 

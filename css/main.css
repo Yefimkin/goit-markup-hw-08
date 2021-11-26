@@ -214,6 +214,20 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .header-connect--envelope {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-connect--telephone {
+    width: 10px;
+    height: 14px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .address-icon {
     margin-right: 10px;
@@ -284,21 +298,26 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+.header-connect__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
   .header-connect__link {
-    font-style: normal;
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
