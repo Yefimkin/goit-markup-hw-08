@@ -1588,6 +1588,7 @@ img {
 .social-mobile {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 479px) {
