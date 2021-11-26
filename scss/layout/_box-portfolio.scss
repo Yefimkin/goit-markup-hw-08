@@ -7,8 +7,8 @@
     transform: translateY(0);
   }
   @media screen and (min-width: 1200px) {
-    width: 370px;
-    height: 294px;
+    // width: 370px;
+    // height: 294px;
   }
 }
 .overlay {
@@ -19,8 +19,8 @@
   height: 100%;
   transform: translateY(100%);
   color: #ffffff;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 77px;
+  padding-bottom: 77px;
   padding-left: 24px;
   padding-right: 24px;
   font-weight: 400;
@@ -29,4 +29,17 @@
   letter-spacing: 0.03em;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(33, 150, 243, 0.9);
+  @media screen and (min-width: 768px) {
+    padding-top: 49px;
+    padding-bottom: 49px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
