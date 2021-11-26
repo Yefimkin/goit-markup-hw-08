@@ -555,6 +555,7 @@ img {
 }
 
 .footer-container {
+  display: block;
   align-items: baseline;
   justify-content: center;
 }
@@ -713,12 +714,6 @@ img {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .subscribe-footer {
-    display: flex;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .subscribe-footer {
     display: block;
@@ -759,6 +754,14 @@ img {
   background-color: inherit;
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-input {
+    display: block;
+    width: 450px;
+    margin: 0 auto 20px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -869,6 +872,7 @@ img {
 
 .hero-title {
   font-style: normal;
+  width: 100%;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -877,12 +881,19 @@ img {
   color: var(--header-color);
   margin-left: auto;
   margin-right: auto;
-  width: 360px;
   text-align: center;
   padding-bottom: 30px;
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+  .hero-title {
+    width: 360px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -891,11 +902,12 @@ img {
     width: 696px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    padding-bottom: 30px;
   }
 }
 
 .section-three {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -982,11 +994,13 @@ img {
 
 .section-two {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
   .section-two {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -994,6 +1008,7 @@ img {
   .section-two-list {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -1004,13 +1019,19 @@ img {
 @media screen and (min-width: 768px) {
   .section-two-item {
     flex-basis: calc(100% / 2 - 30px);
-    margin-left: 30px;
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section-two-item {
     flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-two-item:not(last-child) {
+    margin-bottom: -30px;
   }
 }
 

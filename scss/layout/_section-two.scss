@@ -1,8 +1,10 @@
 .section-two {
   padding-top: 60px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -10,6 +12,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -18,11 +21,16 @@
 
   @media screen and(min-width: 768px) {
     flex-basis: calc(100% / 2 - 30px);
-    margin-left: 30px;
+    margin: 15px;
   }
 
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 4 - 30px);
+  }
+  @media screen and (max-width: 767px) {
+    &:not(last-child) {
+      margin-bottom: -30px;
+    }
   }
 }
 

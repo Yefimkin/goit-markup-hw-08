@@ -48,6 +48,7 @@
 
 .hero-title {
   font-style: normal;
+  width: 100%;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -56,12 +57,15 @@
   color: var(--header-color);
   margin-left: auto;
   margin-right: auto;
-
-  width: 360px;
   text-align: center;
   padding-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: 360px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -69,5 +73,7 @@
     width: 696px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    padding-bottom: 30px;
   }
 }
