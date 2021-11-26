@@ -109,6 +109,9 @@
 
 .modal-form-checkbox-label {
   display: flex;
+
+  // flex-wrap: wrap;
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -133,6 +136,9 @@
     background-color: var(--accent-color);
     background-image: url(../images/on.svg);
     border-color: var(--accent-color);
+  }
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
   }
 }
 
