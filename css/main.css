@@ -25,6 +25,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+body.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -427,6 +432,7 @@ img {
 .modal-form {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .modal-form-head {
