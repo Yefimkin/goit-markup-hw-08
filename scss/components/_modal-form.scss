@@ -12,6 +12,10 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  @media screen and (max-width: 1199px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .modal-form-wrapper {
@@ -109,9 +113,6 @@
 
 .modal-form-checkbox-label {
   display: flex;
-
-  // flex-wrap: wrap;
-
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -139,6 +140,8 @@
   }
   @media screen and (max-width: 1199px) {
     flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 
