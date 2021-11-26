@@ -1,11 +1,14 @@
 .box {
   position: relative;
-  width: 370px;
-  height: 294px;
+
   overflow: hidden;
 
   &:hover .overlay {
     transform: translateY(0);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 294px;
   }
 }
 .overlay {
@@ -17,7 +20,7 @@
   transform: translateY(100%);
   color: #ffffff;
   padding-top: 64px;
-  padding-bottom: 63px;
+  padding-bottom: 64px;
   padding-left: 24px;
   padding-right: 24px;
   font-weight: 400;

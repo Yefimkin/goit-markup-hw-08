@@ -97,6 +97,7 @@ img {
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
 }
 
 @media screen and (min-width: 768px) {
@@ -153,12 +154,6 @@ img {
 
 .header-nav__logo_black {
   color: var(--primary-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-nav__logo:hover > .header-nav__logo_black,
-.header-nav__logo:focus > .header-nav__logo_black {
-  color: var(--hover-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -343,7 +338,7 @@ img {
     border-radius: 2px;
     position: absolute;
     left: 0;
-    bottom: -32px;
+    bottom: -33px;
     cursor: default;
   }
 }
@@ -727,7 +722,6 @@ img {
 .subscribe-footer {
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1289,9 +1283,15 @@ img {
 }
 
 .projects {
-  display: flex;
-  padding-top: 174px;
-  padding-bottom: 34px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .project-title {
@@ -1309,29 +1309,58 @@ img {
   color: var(--second-text-color);
 }
 
-.project-buttons {
+.project-buttons__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
-.project-btn:not(:first-child) {
-  margin-left: 8px;
+@media screen and (min-width: 768px) {
+  .project-buttons__list {
+    justify-content: center;
+  }
+}
+
+.project-buttons__item:not(:last-child) {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .project-buttons__item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  padding-bottom: 94px;
   margin-bottom: -30px;
 }
 
+@media screen and (min-width: 768px) {
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
 .projects-items {
-  flex-basis: calc((100% - 3 * 30px) / 9);
-  margin-left: 30px;
   margin-bottom: 30px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .projects-items {
+    display: flex;
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-items {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .projects-items:hover, .projects-items:focus {
@@ -1345,6 +1374,12 @@ img {
   border-bottom: 1px solid #ececec;
   border-right: 1px solid #ececec;
   border-left: 1px solid #ececec;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-items-description {
+    flex-grow: 1;
+  }
 }
 
 .button {
@@ -1375,13 +1410,18 @@ img {
 
 .box {
   position: relative;
-  width: 370px;
-  height: 294px;
   overflow: hidden;
 }
 
 .box:hover .overlay {
   transform: translateY(0);
+}
+
+@media screen and (min-width: 1200px) {
+  .box {
+    width: 370px;
+    height: 294px;
+  }
 }
 
 .overlay {
@@ -1393,7 +1433,7 @@ img {
   transform: translateY(100%);
   color: #ffffff;
   padding-top: 64px;
-  padding-bottom: 63px;
+  padding-bottom: 64px;
   padding-left: 24px;
   padding-right: 24px;
   font-weight: 400;
