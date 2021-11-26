@@ -987,37 +987,27 @@ img {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .section-two-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-left: -30px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .section-two-list {
-    display: flex;
-    height: 251px;
-  }
+.section-two-item {
+  margin-bottom: 30px;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .section-two-item {
-    flex-basis: calc((100% - 2 * 30px) / 4);
-    margin-bottom: 30px;
+    flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section-two-item {
-    width: 270px;
-    height: 101px;
-  }
-  .section-two-item:not(:last-child) {
-    margin-right: 30px;
+    flex-basis: calc(100% / 4 - 30px);
   }
 }
 
@@ -1050,27 +1040,13 @@ img {
 }
 
 .section-two-icons {
-  width: 270px;
-  height: 120px;
+  min-height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  display: block;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media screen and (max-width: 1199px) {
-  .section-two-icons {
-    width: 354px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .section-two-icons {
-    width: 450px;
-  }
 }
 
 .team {
