@@ -9,20 +9,23 @@
 }
 
 .footer-container {
-  display: flex;
+  // text-align: center;
   align-items: baseline;
   justify-content: center;
   @media screen and (max-width: 767px) {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
     width: 768px;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
     text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 
