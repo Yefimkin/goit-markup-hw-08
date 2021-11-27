@@ -1064,9 +1064,6 @@ img {
   .section-two-item {
     flex-basis: calc(100% / 4 - 30px);
   }
-  .section-two-item:not(last-child) {
-    margin-bottom: -30px;
-  }
 }
 
 .text-name {
