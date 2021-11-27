@@ -25,11 +25,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-body.modal-open {
-  height: 100vh;
-  overflow-y: hidden;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -653,6 +648,10 @@ img {
   color: var(--header-color);
 }
 
+.footer-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 @media screen and (min-width: 1200px) {
   .footer-item:not(:last-child) {
     margin-bottom: 9px;
@@ -774,6 +773,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -914,26 +914,20 @@ img {
   }
 }
 
-.hero-title {
-  font-style: normal;
-  width: 100%;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.62;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--header-color);
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 360px) {
   .hero-title {
+    font-style: normal;
     width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--header-color);
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1346,7 +1340,7 @@ img {
 .project-buttons__list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
