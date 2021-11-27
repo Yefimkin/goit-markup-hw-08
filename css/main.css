@@ -1046,7 +1046,7 @@ img {
   .section-two-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    margin-left: -30px;
   }
 }
 
@@ -1057,7 +1057,7 @@ img {
 @media screen and (min-width: 768px) {
   .section-two-item {
     flex-basis: calc(100% / 2 - 30px);
-    margin: 15px;
+    margin-left: 30px;
   }
 }
 
@@ -1065,9 +1065,6 @@ img {
   .section-two-item {
     flex-basis: calc(100% / 4 - 30px);
   }
-}
-
-@media screen and (max-width: 767px) {
   .section-two-item:not(last-child) {
     margin-bottom: -30px;
   }
@@ -1252,6 +1249,7 @@ img {
 
 .clients-list {
   display: flex;
+  margin: -15px;
 }
 
 @media screen and (max-width: 1199px) {

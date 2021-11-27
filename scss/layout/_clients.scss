@@ -9,6 +9,7 @@
 
 .clients-list {
   display: flex;
+  margin: -15px;
   @media screen and (max-width: 1199px) {
     flex-wrap: wrap;
     justify-content: center;
