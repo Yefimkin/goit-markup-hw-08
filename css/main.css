@@ -681,12 +681,6 @@ img {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 767px) {
-  .footer-left {
-    margin-bottom: 60px;
-  }
-}
-
 @media screen and (max-width: 1199px) {
   .fotter-right {
     display: block;
@@ -759,7 +753,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .subscribe-footer {
-    display: block;
     align-items: baseline;
     margin-left: 93px;
   }
@@ -773,7 +766,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 60px;
   margin-bottom: 20px;
 }
 
